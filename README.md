@@ -1,2 +1,2 @@
 # Cyber-Labs
-My hands-on cybersecurity labs and mini projects for learning Python and IT security
+Hands-on cybersecurity labs documenting reconnaissance, vulnerability analysis, exploitation, and mitigation in controlled environments.
