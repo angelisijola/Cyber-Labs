@@ -1,2 +1,2 @@
 # Cyber-Labs
-Hands-on cybersecurity labs documenting reconnaissance, vulnerability analysis, exploitation, and mitigation in controlled environments.
+This repository documents hands-on cybersecurity labs completed to practice network reconnaissance, vulnerability identification, exploitation, and mitigation in isolated and legal lab environments.
