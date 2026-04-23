@@ -17,6 +17,7 @@ This lab simulates a basic SOC environment where logs from multiple systems are 
 
 ## 🏗️ Architecture
 Windows Host ──┐  
+                                  
                                   ├──> Splunk Enterprise (Ubuntu VM)  
 Ubuntu VM  ────┘  
 
