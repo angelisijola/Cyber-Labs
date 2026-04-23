@@ -1,0 +1,38 @@
+# SOC Log Monitoring & Brute Force Detection Lab (Splunk)
+
+## 📌 Objective
+Built a small SIEM lab using Splunk to collect and analyze logs from a Windows host and an Ubuntu virtual machine. The goal was to understand log behavior, establish a baseline, and create basic detection logic for authentication activity.
+
+
+
+## 🧠 Lab Overview
+This lab simulates a basic SOC environment where logs from multiple systems are centralized and analyzed.
+
+- Windows Host: Security Event Logs  
+- Ubuntu VM: `/var/log/auth.log`, `/var/log/syslog`  
+- SIEM Platform: Splunk Enterprise  
+- Log Forwarding: Splunk Universal Forwarder  
+
+
+
+## 🏗️ Architecture
+Windows Host ──┐  
+               ├──> Splunk Enterprise (Ubuntu VM)  
+Ubuntu VM  ────┘  
+
+
+
+## ⚙️ Setup Summary
+- Installed Splunk Enterprise on Ubuntu VM  
+- Installed Universal Forwarder on Windows host and Ubuntu VM  
+- Configured log forwarding to central Splunk instance  
+- Verified ingestion of Windows and Linux logs  
+
+
+
+## 📊 Log Analysis
+
+### Linux Authentication Logs
+```spl
+index=* source="/var/log/auth.log"
+| stats count by user
