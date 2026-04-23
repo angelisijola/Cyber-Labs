@@ -35,4 +35,4 @@ Ubuntu VM  ────┘
 ### Linux Authentication Logs
 ```spl
 index=* source="/var/log/auth.log"
-| stats count by user
+
